@@ -1,0 +1,139 @@
+\documentclass{resume}
+\usepackage{fullpage}
+\usepackage{multicol}
+
+%% Lifted from resume.cls
+\renewenvironment{itemize}{
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+}{
+  \end{list}
+}
+
+\name{Stuart Olsen}
+\address{
+  1302 Greenhill Dr.\\
+  Canyon Lake, TX 78133
+}
+\address{
+  (210)\,482\,--\,9474 \addressSep\ stuart@sj-olsen.com
+}
+
+\begin{document}
+\maketitle
+
+\begin{rSection}{Education}
+  {\bf Texas State University} \hfill {\em Est. May 2015}\\
+  B.S. in Computer Science \& Mathematics\\
+  National Merit Scholarship\\
+  President's Honor Scholarship\\
+  Overall GPA: 3.65
+\end{rSection}
+
+\begin{rSection}{Experience}
+  \begin{rSubsection}{Texas State University}
+    {May 2013--Present}
+    {Research Assistant}
+    {San Marcos, TX}
+  \item Author: {\itshape SQLPhi: A SQL-Based Database Engine for Intel Xeon Phi Coprocessors}
+  \item Programmer: SQLPhi Database Engine
+  \item Cluster administrator: Marcher Online Compiler
+    \begin{itemize}
+    \item CentOS 6/7
+    \item Open Grid Scheduler
+    \item CUDA GPGPUs
+    \item Intel Xeon Phi Coprocessors
+    \end{itemize}
+  \item Programmer: Marcher Online Compiler
+    \begin{itemize}
+    \item Power measurement utilities
+    \item System scripts
+    \end{itemize}
+  \end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Technical Strengths}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Programming Languages & C, C++, Common Lisp, MIPS Assembly, CUDA\\
+    Libraries & C++ Standard Library, GMP, OpenMP, MPI\\
+    Tools & Git, Emacs, GDB, \LaTeX\\
+    Systems & RedHat- and Debian-based Linux systems
+  \end{tabular}
+
+  Additional limited experience with:
+  \vspace{-0.5em}
+  \begin{multicols}{2}
+    \begin{itemize}
+    \item Java
+    \item Python
+    \item NesC
+    \item IA32/EM64T Assembly
+    \item Lexx and Yacc
+    \item Vim
+    \end{itemize}
+  \end{multicols}
+\end{rSection}
+
+\pagebreak
+\begin{rSection}{Academic Background}
+  \begin{multicols}{2}
+    \raggedcolumns
+    \begin{rSubsection}{Computer Science}{}{}{}
+    \item Embedded Computer Systems
+    \item Computer Architecture
+    \item Parallel Programming
+    \item Unix Systems Programming
+    \item Operating Systems
+    \item Program Translators
+    \item Assembly Language
+    \item Data Structures
+    \item \mbox{Object-Oriented Design and Implementation}
+    \end{rSubsection}
+    \columnbreak
+    \begin{rSubsection}{Mathematics}{}{}{}
+    \item General Topology
+    \item Analysis (I and II)
+    \item Differential Equations
+    \item Calculus (II and III)
+    \item Linear Algebra
+    \item Modern Algebra
+    \item Discrete Math (I and II)
+    \end{rSubsection}
+  \end{multicols}
+\end{rSection}
+
+\begin{rSection}{Coding Projects}
+  \begin{rSubsection}{Compilers}{}{}{}
+  \item Compiler for C-like language to MIPS (C++)
+    \begin{itemize}
+    \item SystemV ABI
+    \end{itemize}
+  \end{rSubsection}\vspace{-0.5em}
+  \begin{rSubsection}{Operating Systems}{}{}{}
+  \item IBM PC-compatible protected-mode kernel (C)
+    \begin{itemize}
+    \item Interrupt-driven I/O
+    \item UART I/O with hardware buffering support
+    \item PS/2 keyboard input
+    \item VGA text output
+    \item Basic cooperative multitasking
+    \end{itemize}
+  \end{rSubsection}\vspace{-0.5em}
+  \begin{rSubsection}{Parallel Programming}{}{}{}
+  \item Mandelbrot set renderer (C++)
+    \begin{itemize}
+    \item Accelerated with CUDA and OpenMP
+    \item Run time--selectable supersampling
+    \end{itemize}
+  \end{rSubsection}\vspace{-0.5em}
+  \begin{rSubsection}{Architecture}{}{}{}
+  \item MIPS emulator (C)
+    \begin{itemize}
+    \item Branch prediction statistics
+    \item Cache hit/miss statistics
+    \item Pipeline simulation
+    \end{itemize}
+  \end{rSubsection}
+\end{rSection}
+
+\end{document}
