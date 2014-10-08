@@ -18,20 +18,33 @@
 }
 
 %% Title
-\def \@maketitle {
+\renewcommand\@maketitle{
+  \newpage
   \noindent
-  \parbox[b]{0.75\textwidth}{
-    \raggedright
-    {\bfseries \Huge \@name}
+  \mbox{
+    \parbox[b]{0.75\textwidth}{
+      \raggedright
+      {\bfseries \Huge \@name}
+    }
+    \hfill
+    \parbox[b]{0.25\textwidth}{
+      \raggedleft
+      {\bfseries \small \@contact}
+    }
   }
-  \hfill
-  \parbox[b]{0.25\textwidth}{
-    \raggedleft
-    {\bfseries \small \@contact}
-  }
-  \vspace{-1.25em}
-\\
+  \vspace{-1.25em}\\
   \rule{\textwidth}{2.5pt}
+}
+\renewcommand\maketitle{\par
+  \if@twocolumn
+    \twocolumn[
+      \begin{@twocolumnfalse}
+        \@maketitle
+      \end{@twocolumnfalse}
+    ]%
+  \else
+    \@maketitle
+  \fi
 }
 
 %% Sections
