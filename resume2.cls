@@ -72,5 +72,5 @@
   $\vcenter{\hbox{\tiny$\bullet$}}$
 }
 \newlist{tightlist}{itemize}{2}
-\setlist[tightlist]{itemindent=0.25em,leftmargin=*,label=\smallbullet,labelsep=0.3em,itemsep=0pt,parsep=2pt}
+\setlist[tightlist]{itemindent=0em,leftmargin=*,label=\smallbullet,labelsep=0.3em,itemsep=0pt,parsep=2pt}
 \setlist[tightlist,2]{labelsep=0.5em,label={-},topsep=0pt}
