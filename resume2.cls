@@ -68,9 +68,9 @@
 
 %% Lists
 \RequirePackage{enumitem}
-\newcommand\smallbullet{
-  $\vcenter{\hbox{\tiny$\bullet$}}$
-}
+\RequirePackage{calc}
+\newcommand\smallbullet{\raisebox{0.2em}{\tiny$\bullet$}}
+\newcommand\smalldash{\raisebox{0.04em}{-}}
 \newlist{tightlist}{itemize}{2}
-\setlist[tightlist]{itemindent=0em,leftmargin=*,label=\smallbullet,labelsep=0.3em,itemsep=0pt,parsep=2pt}
-\setlist[tightlist,2]{labelsep=0.5em,label={-},topsep=0pt}
+\setlist[tightlist]{itemindent=0em,leftmargin=1.1em,label=\smallbullet,labelsep=0.55em,itemsep=0em,parsep=2pt}
+\setlist[tightlist,2]{labelsep=0.5em,label=\smalldash,topsep=0pt}
