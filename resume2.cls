@@ -34,6 +34,7 @@
   }
   \vspace{-1.25em}\\
   \rule{\textwidth}{2.5pt}
+  \vspace{1.2em}
 }
 \renewcommand\maketitle{\par
   \if@twocolumn
@@ -51,3 +52,11 @@
 % \RequirePackage{titlesec}
 % \titleformat{\section}[leftmargin]{\raggedleft\bfseries\LARGE}{}{0pt}{}%[{\titlerule[1.25pt]}]
 % \titlespacing*{\section}{2in}{0pt}{5pt}
+
+%% Lists
+\RequirePackage{enumitem}
+\newcommand\smallbullet{
+  $\vcenter{\hbox{\tiny$\bullet$}}$
+}
+\newlist{tightlist}{itemize}{2}
+\setlist[tightlist]{leftmargin=*,label=\smallbullet,itemsep=0pt,parsep=2pt,topsep=0pt}
