@@ -1,4 +1,4 @@
-\ProvidesClass{resume2}[2014/10/07 Resume class]
+\ProvidesClass{resume}[2014/10/07 Resume class]
 \LoadClass[11pt]{article}
 \pagenumbering{gobble}
 
