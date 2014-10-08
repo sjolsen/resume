@@ -49,9 +49,14 @@
 }
 
 %% Sections
-% \RequirePackage{titlesec}
-% \titleformat{\section}[leftmargin]{\raggedleft\bfseries\LARGE}{}{0pt}{}%[{\titlerule[1.25pt]}]
-% \titlespacing*{\section}{2in}{0pt}{5pt}
+\RequirePackage{changepage}
+\RequirePackage{calc}
+\newenvironment{rsection}[1]{
+  \section*{#1}
+  \begin{adjustwidth}{1.5em}{}
+}{
+  \end{adjustwidth}
+}
 
 %% Lists
 \RequirePackage{enumitem}
@@ -59,4 +64,5 @@
   $\vcenter{\hbox{\tiny$\bullet$}}$
 }
 \newlist{tightlist}{itemize}{2}
-\setlist[tightlist]{leftmargin=*,label=\smallbullet,itemsep=0pt,parsep=2pt,topsep=0pt}
+\setlist[tightlist]{itemindent=0.25em,leftmargin=*,label=\smallbullet,labelsep=0.3em,itemsep=0pt,parsep=2pt}
+\setlist[tightlist,2]{labelsep=0.5em,label={-},topsep=0pt}
