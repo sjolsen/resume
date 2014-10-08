@@ -2,10 +2,7 @@
 \usepackage[margin=0.75in,top=0.6in]{geometry}
 
 \name{Stuart Olsen}
-\contact{
-  (210)\ 482\,-\,9474\\
-  stuart@sj-olsen.com
-}
+\contact{(210)\ 482\,-\,9474\\\vspace{-1pt}stuart@sj-olsen.com} %% HACK
 
 \begin{document}
 \maketitle
@@ -54,75 +51,75 @@
   \item CUDA
   \item Common Lisp
   \item {\fontfamily{cmr}\selectfont\LaTeX}
-  \item Java
-  \item NesC
   \end{tightlist}
 
   \subsection*{Tools and Libraries}
   \begin{tightlist}
   \item RedHat- and Debian-based Linux systems
   \item GNU toolchain and GDB
-  \item C and C++ Standard Libraries
   \item OpenMP and MPI
   \end{tightlist}
 \end{rsection}
 
-\section*{Work Experience}
-\subsection*{Research Assistant\\
-  {\normalsize Texas State University}}
-\mdseries May 2013 -- Present
-\begin{tightlist}
-\item Author: {\itshape SQLPhi: A SQL-Based Database Engine for Intel Xeon Phi Coprocessors}
-\item Programmer: SQLPhi Database Engine
-\item Cluster administrator: Marcher Online Compiler
+\begin{rsection}{Work Experience}
+  %% Hack: broken everything
+  \vspace{1pt}
+  {\bfseries{\large Research Assistant}\\\vspace{1pt}{Texas State University}\\\vspace{6pt}}
+  May 2013 -- Present
   \begin{tightlist}
-  \item CentOS 6/7
-  \item Open Grid Scheduler
-  \item CUDA GPGPUs
-  \item Intel Xeon Phi Coprocessors
+  \item Author: {\itshape SQLPhi: A SQL-Based Database Engine for Intel Xeon Phi Coprocessors}
+  \item Programmer: SQLPhi Database Engine
+  \item Cluster administrator: Marcher Online Compiler
+    \begin{tightlist}
+    \item CentOS 6/7
+    \item Open Grid Scheduler
+    \item CUDA GPGPUs
+    \item Intel Xeon Phi Coprocessors
+    \end{tightlist}
+  \item Programmer: Marcher Online Compiler
+    \begin{tightlist}
+    \item Power measurement utilities
+    \item System scripts
+    \end{tightlist}
   \end{tightlist}
-\item Programmer: Marcher Online Compiler
-  \begin{tightlist}
-  \item Power measurement utilities
-  \item System scripts
-  \end{tightlist}
-\end{tightlist}
+\end{rsection}
 
-\section*{Coding Projects}
-\subsection*{Compilers}
-\begin{tightlist}
-\item Compiler for C-like language to MIPS (C++)
+\begin{rsection}{Coding Projects}
+  \subsection*{Compilers}
   \begin{tightlist}
-  \item SystemV ABI
+  \item Compiler for C-like language to MIPS (C++)
+    \begin{tightlist}
+    \item SystemV ABI
+    \end{tightlist}
   \end{tightlist}
-\end{tightlist}
-\subsection*{Operating Systems}
-\begin{tightlist}
-\item IBM PC-compatible protected-mode kernel (C)
+  \subsection*{Operating Systems}
   \begin{tightlist}
-  \item Interrupt-driven I/O
-  \item UART I/O with hardware buffering support
-  \item PS/2 keyboard input
-  \item VGA text output
-  \item Basic cooperative multitasking
+  \item PC-compatible protected-mode kernel (C)
+    \begin{tightlist}
+    \item Interrupt-driven I/O
+    \item UART I/O with hardware buffering support
+    \item PS/2 keyboard input
+    \item VGA text output
+    \item Basic cooperative multitasking
+    \end{tightlist}
   \end{tightlist}
-\end{tightlist}
-\subsection*{Parallel Programming}
-\begin{tightlist}
-\item Mandelbrot set renderer (C++)
+  \subsection*{Parallel Programming}
   \begin{tightlist}
-  \item Accelerated with CUDA and OpenMP
-  \item Run time--selectable supersampling
+  \item Mandelbrot set renderer (C++)
+    \begin{tightlist}
+    \item Accelerated with CUDA and OpenMP
+    \item Run time--selectable supersampling
+    \end{tightlist}
   \end{tightlist}
-\end{tightlist}
-\subsection*{Architecture}
-\begin{tightlist}
-\item MIPS emulator (C)
+  \subsection*{Architecture}
   \begin{tightlist}
-  \item Branch prediction statistics
-  \item Cache hit/miss statistics
-  \item Pipeline simulation
+  \item MIPS emulator (C)
+    \begin{tightlist}
+    \item Branch prediction statistics
+    \item Cache hit/miss statistics
+    \item Pipeline simulation
+    \end{tightlist}
   \end{tightlist}
-\end{tightlist}
+\end{rsection}
 
 \end{document}

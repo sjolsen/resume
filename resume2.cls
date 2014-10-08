@@ -24,17 +24,18 @@
   \mbox{
     \parbox[b]{0.75\textwidth}{
       \raggedright
+      \hspace{-6pt} %% HACK
       {\bfseries \Huge \@name}
     }
     \hfill
-    \parbox[b]{0.25\textwidth}{
+    \parbox[b]{0.238\textwidth}{ %% HACK
       \raggedleft
       {\bfseries \small \@contact}
     }
   }
-  \vspace{-1.25em}\\
+  \vspace{-1.5em}\\
   \rule{\textwidth}{2.5pt}
-  \vspace{1.2em}
+  \vspace{1em}
 }
 \renewcommand\maketitle{\par
   \if@twocolumn
@@ -49,8 +50,15 @@
 }
 
 %% Sections
+\RequirePackage{titlesec}
+\titleformat{\section}{\bfseries\Large}{}{0pt}{}
+\titlespacing*{\section}{0pt}{0pt}{5pt}
+\titleformat{\subsection}{\bfseries\large}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{6pt}{5pt}
+\titleformat{\subsubsection}{\bfseries}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{3pt}{5pt}
+
 \RequirePackage{changepage}
-\RequirePackage{calc}
 \newenvironment{rsection}[1]{
   \section*{#1}
   \begin{adjustwidth}{1.5em}{}
