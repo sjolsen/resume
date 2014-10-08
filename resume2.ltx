@@ -1,0 +1,160 @@
+\documentclass{resume2}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{calc}
+
+\name{Stuart Olsen}
+\contact{
+  (210)\ 482\,-\,9474\\
+  stuart@sj-olsen.com
+}
+
+\begin{document}
+\maketitle
+
+\section*{Education}
+\vspace{-2.5em}
+\hspace{\parindent}
+\parbox[t]{0.425\textwidth}{
+  \subsection*{Texas State University -- 2015}
+  \begin{itemize}[leftmargin=*]
+    \itemsep0pt
+    \parskip2pt
+  \item B.S. in Computer Science \& Mathematics
+  \item National Merit Scholarship
+  \item President's Honor Scholarship
+  \item Overall GPA: 3.65
+  \end{itemize}
+}
+\hfill
+\parbox[t]{0.66\textwidth}{\parbox[t]{0.3\textwidth}{
+  \subsubsection*{Computer Science}
+  Embedded Computer Systems\\
+  Computer Architecture\\
+  Parallel Programming\\
+  Unix Systems Programming\\
+  Operating Systems\\
+  Program Translators\\
+  Assembly Language\\
+  Data Structures
+}
+\parbox[t]{0.33\textwidth}{
+  \subsubsection*{Mathematics}
+  General Topology\\
+  Analysis (I and II)\\
+  Differential Equations\\
+  Calculus (II and III)\\
+  Linear Algebra\\
+  Modern Algebra\\
+  Discrete Math (I and II)
+}}
+
+\vspace{-1.5em}
+\section*{Technical Skills}
+\vspace{-2.5em}
+\hspace{\parindent}
+\parbox[t]{\textwidth-\parindent}{
+  \begin{multicols}{2}
+    \raggedcolumns
+    \subsection*{Programming Languages}
+    \begin{multicols}{2}
+      \raggedcolumns
+      \begin{itemize}[leftmargin=*]
+        \itemsep0pt
+        \parskip2pt
+      \item C and C++
+      \item MIPS Assembly
+      \item IA32 Assembly
+      \item CUDA
+      \end{itemize}
+      \columnbreak
+      \begin{itemize}[leftmargin=*]
+        \itemsep0pt
+        \parskip2pt
+      \item Common Lisp
+      \item {\fontfamily{cmr}\selectfont\LaTeX}
+      \item Java
+      \item NesC
+      \end{itemize}
+    \end{multicols}
+    \columnbreak
+    \subsection*{Tools and Libraries}
+    \begin{itemize}[leftmargin=*]
+      \itemsep0pt
+      \parskip2pt
+    \item RedHat- and Debian-based Linux systems
+    \item GNU toolchain and GDB
+    \item C and C++ Standard Libraries
+    \item OpenMP and MPI
+    \end{itemize}
+  \end{multicols}
+}
+
+\begin{multicols}{2}
+  \raggedcolumns
+  \section*{Work Experience}
+  \vspace{-2.5em}
+  \hspace{\parindent}
+  \parbox[t]{0.5\textwidth-\parindent}{
+    \subsection*{Research Assistant\\
+      {\normalsize Texas State University}}
+    \mdseries May 2013 -- Present
+    \begin{itemize}[leftmargin=*]
+      \itemsep0pt
+      \parskip2pt
+      \raggedright
+    \item Author: {\itshape SQLPhi: A SQL-Based Database Engine for Intel Xeon Phi Coprocessors}
+    \item Programmer: SQLPhi Database Engine
+    \item Cluster administrator: Marcher Online Compiler
+      \begin{itemize}[leftmargin=*]
+        \itemsep0pt
+        \parskip2pt
+      \item CentOS 6/7
+      \item Open Grid Scheduler
+      \item CUDA GPGPUs
+      \item Intel Xeon Phi Coprocessors
+      \end{itemize}
+    \item Programmer: Marcher Online Compiler
+      \begin{itemize}[leftmargin=*]
+        \itemsep0pt
+        \parskip2pt
+      \item Power measurement utilities
+      \item System scripts
+      \end{itemize}
+    \end{itemize}
+  }
+  \columnbreak
+  \section*{Coding Projects}
+  \parbox[t]{0.5\textwidth-\parindent}{
+  \subsection*{Compilers}
+  \item Compiler for C-like language to MIPS (C++)
+    \begin{itemize}
+    \item SystemV ABI
+    \end{itemize}
+  \subsection*{Operating Systems}
+  \item IBM PC-compatible protected-mode kernel (C)
+    \begin{itemize}
+    \item Interrupt-driven I/O
+    \item UART I/O with hardware buffering support
+    \item PS/2 keyboard input
+    \item VGA text output
+    \item Basic cooperative multitasking
+    \end{itemize}
+  \subsection*{Parallel Programming}
+  \item Mandelbrot set renderer (C++)
+    \begin{itemize}
+    \item Accelerated with CUDA and OpenMP
+    \item Run time--selectable supersampling
+    \end{itemize}
+  \subsection*{Architecture}
+  \item MIPS emulator (C)
+    \begin{itemize}
+    \item Branch prediction statistics
+    \item Cache hit/miss statistics
+    \item Pipeline simulation
+    \end{itemize}
+}
+\end{multicols}
+
+\end{document}
