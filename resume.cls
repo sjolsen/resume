@@ -51,7 +51,7 @@
 
 %% Sections
 \RequirePackage{titlesec}
-\titleformat{\section}{\bfseries\Large}{}{0pt}{}
+\titleformat{\section}{\bfseries\LARGE}{}{0pt}{}
 \titlespacing*{\section}{0pt}{0pt}{5pt}
 \titleformat{\subsection}{\bfseries\large}{}{0pt}{}
 \titlespacing*{\subsection}{0pt}{6pt}{5pt}
